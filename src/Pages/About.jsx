@@ -90,19 +90,18 @@ const About = () => {
             <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">
-                  Launching 'Full Stack Hero' with Youtube Channel
+                  Launching 'MongoMastery' with Youtube Channel
                 </div>
                 <div className="text-center capitalize text-1xl">
                   In June 2020, I decided to share my knowledge and passion for
                   web development with a broader audience. This led to the
-                  creation of my YouTube channel, 'Full Stack Hero.' The
-                  channel's mission is to educate and inspire aspiring
-                  developers by providing comprehensive tutorials and insights
-                  into full stack development. Over time, 'Full Stack Hero' has
-                  grown into a vibrant community with over 3,600 subscribers and
-                  more than 1.5 million views. The positive feedback and
-                  engagement from my audience have been incredibly rewarding and
-                  motivating.
+                  creation of my YouTube channel, 'MongoMastery.' The channel's
+                  mission is to educate and inspire aspiring developers by
+                  providing comprehensive tutorials and insights into full stack
+                  development. Over time, 'MongoMastery' has grown into a
+                  vibrant community with over 3,600 subscribers and more than
+                  1.5 million views. The positive feedback and engagement from
+                  my audience have been incredibly rewarding and motivating.
                 </div>
               </div>
             </div>
