@@ -3,7 +3,7 @@ const About = () => {
     <>
       <div className="container mx-auto">
         <div className="text-4xl mt-[3%] text-center underline underline-offset-2">
-          About Us
+          About Me
         </div>
 
         <div className="w-3/4 mx-auto mt-12">
@@ -219,6 +219,117 @@ const About = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* #################### Advanced JavaScript and Full Stack Development ############### */}
+          <div className="mt-5">
+            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
+              <div className="flex flex-col items-center justify-center gap-3">
+                <div className="text-2xl font-bold">
+                  Advanced JavaScript and Full Stack Development
+                </div>
+                <div className="text-center capitalize text-1xl">
+                  My deep understanding of advanced JavaScript concepts is
+                  crucial for full stack development. This knowledge enables me
+                  to build comprehensive web applications that are both
+                  efficient and maintainable. By combining my frontend and
+                  backend skills, I can develop end-to-end solutions that meet
+                  the needs of users and businesses alike.
+                </div>
+              </div>
+              <div>
+                <h1 className="text-xl font-semibold">Real-world Projects</h1>
+                <h4 className="mt-3 border-b">
+                  Throughout my journey, I have worked on various projects that
+                  demonstrate my skills and expertise. Here are some notable
+                  examples:
+                </h4>
+                <ul className="flex flex-col gap-4 pl-12 mt-5 list-decimal">
+                  <li className="list-item">
+                    <span className="font-semibold">E-commerce Platform:</span>I
+                    developed a full-fledged e-commerce platform using the MERN
+                    stack. The platform includes features like user
+                    authentication, product management, shopping cart
+                    functionality, and order processing. The responsive design,
+                    secure payment gateway integration, and intuitive user
+                    interface showcase my ability to handle both frontend and
+                    backend development.
+                  </li>
+                  <li className="list-item">
+                    <span className="font-semibold">Blogging Application:</span>
+                    I created a dynamic blogging application where users can
+                    create, edit, and delete posts. The application includes
+                    user authentication, rich text editing, and a commenting
+                    system. This project highlights my skills in full stack
+                    development and my ability to create feature-rich web
+                    applications.
+                  </li>
+                  <li className="list-item">
+                    <span className="font-semibold">
+                      Real-time Chat Application:
+                    </span>
+                    I built a real-time chat application using Node.js, Express,
+                    and Socket.io. The application supports private messaging,
+                    group chats, and user presence indicators. This project
+                    demonstrates my expertise in real-time web technologies and
+                    my ability to build interactive applications.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="mt-5">
+            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
+              <div className="flex flex-col items-center justify-center gap-3">
+                <div className="text-2xl font-bold">
+                  The Impact of 'MongoMastery'
+                </div>
+                <div className="text-center capitalize text-1xl">
+                  'MongoMastery' has become more than just a YouTube channel; it
+                  is a community of learners and enthusiasts who share a passion
+                  for web development. Through my videos, I aim to break down
+                  complex concepts into digestible and practical tutorials that
+                  can help aspiring developers at all levels. The channel covers
+                  a wide range of topics, including:
+                </div>
+              </div>
+              <div className="pl-12 mt-5">
+                <ul className="flex flex-col gap-4 list-disc">
+                  <li className="list-item">
+                    <span className="font-semibold">React :</span> From basic
+                    tutorials to advanced topics like hooks, context API, and
+                    state management.
+                  </li>
+                  <li className="list-item">
+                    <span className="font-semibold">Node.js and Express :</span>
+                    Building RESTful APIs, handling middleware, and integrating
+                    databases.
+                  </li>
+                  <li className="list-item">
+                    <span className="font-semibold">MongoDB :</span> Designing
+                    schemas, managing collections, and performing CRUD
+                    operations.
+                  </li>
+                  <li className="list-item">
+                    <span className="font-semibold">
+                      Tailwind CSS & Daisy UI Or Bootstrap :{" "}
+                    </span>
+                    Creating responsive and visually appealing designs.
+                  </li>
+                  <li className="list-item">
+                    <span className="font-semibold">Server Management : </span>
+                    Configuring and managing servers on Ubuntu for optimal
+                    performance and security.
+                  </li>
+                </ul>
+              </div>
+              <h4 className="mt-5">
+                The positive feedback and engagement from my audience have been
+                incredibly rewarding. Seeing the impact of my content on their
+                learning journey motivates me to continue creating high-quality
+                tutorials and expanding the channel's offerings.
+              </h4>
             </div>
           </div>
         </div>
