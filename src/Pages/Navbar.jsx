@@ -12,25 +12,25 @@ const Navbar = () => {
             <nav className="flex gap-4">
               <Link
                 className="transition-colors ease-linear hover:text-purple-300"
-                to="/"
+                to="/myPortfolio/"
               >
                 Home
               </Link>
               <Link
                 className="transition-colors ease-linear hover:text-purple-300"
-                to="/about"
+                to="/myPortfolio/about"
               >
                 About
               </Link>
               <Link
                 className="transition-colors ease-linear hover:text-purple-300"
-                to="/projects"
+                to="/myPortfolio/projects"
               >
                 Projects
               </Link>
               <Link
                 className="transition-colors ease-linear hover:text-purple-300"
-                to="/contact"
+                to="/myPortfolio/contact"
               >
                 Contact Us
               </Link>
