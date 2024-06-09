@@ -1,12 +1,14 @@
 const About = () => {
   return (
     <>
-      <div className="container mx-auto">
-        <div className="text-4xl mt-[3%] text-center underline underline-offset-2">
-          About Me
+      <div className="text-4xl mt-[3%]  flex justify-center items-center w-full    uppercase">
+        <div className="relative flex justify-center w-full mx-auto">
+          <span className="left-0 ">About Me</span>
+          <span className="absolute border-b-4 border-green-400 bottom-0 -rotate-[2deg] w-36 "></span>
         </div>
-
-        <div className="w-3/4 mx-auto mt-12">
+      </div>
+      <div className="container mx-auto">
+        <div className="w-[96%] md:w-4/5  mx-auto mt-12">
           <div className="mb-2 text-3xl font-bold ">Who Am I ?</div>
           <div className="grid grid-cols-4 gap-5">
             <div className="col-span-4 px-5 mx-auto lg:col-span-2 py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">

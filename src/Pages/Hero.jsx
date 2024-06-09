@@ -2,7 +2,6 @@ import { FaCode } from "react-icons/fa";
 import { motion } from "framer-motion";
 import a from "../assets/animate.png";
 import r from "../assets/animate-ring.png";
-import { Link } from "react-router-dom";
 const Hero = () => {
   const textvariants = {
     initial: {
@@ -103,25 +102,25 @@ const Hero = () => {
         />
         <motion.img
           src={a}
-          className="absolute hidden xl:block rotate-12 lg:left-60 -right-12 top-24 md:top-52"
+          className="fixed hidden xl:block rotate-12 lg:left-60 -right-12 top-24 md:top-52"
           alt=""
           width={100}
         />
         <img
           src={a}
-          className="absolute z-20 rotate-12 lg:-rotate-12 right-48 md:top-1/2"
+          className="fixed z-20 rotate-12 right-48 md:top-1/2"
           alt=""
           width={50}
         />
         <img
           src={r}
-          className="absolute right-2/3 md:top-2/3"
+          className="fixed right-2/3 md:top-2/3"
           alt=""
           width={100}
         />
-        <FaCode className="absolute text-2xl animate-bounce left-56 top-32" />
-        <FaCode className="absolute text-2xl animate-ping right-2/2 top-34" />
-        <FaCode className="absolute text-4xl animate-pulse right-1/3 top-52" />
+        <FaCode className="fixed text-2xl animate-bounce left-56 top-32" />
+        <FaCode className="fixed text-2xl animate-ping right-2/2 top-34" />
+        <FaCode className="fixed text-4xl animate-pulse right-1/3 top-52" />
       </motion.div>
       <motion.h1
         variants={sliderVariants}
