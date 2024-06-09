@@ -48,14 +48,17 @@ const Hero = () => {
   return (
     <>
       <div className="flex items-center justify-center mt-32 ">
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col gap-4 max-md:pl-7 md:items-center">
           <motion.div
-            className="flex flex-col items-center gap-4 text-4xl capitalize"
+            className="flex flex-col gap-4 text-4xl capitalize md:items-center"
             variants={textvariants}
             initial="initial"
             animate="animate"
           >
-            <motion.div variants={textvariants} className="tracking-widest">
+            <motion.div
+              variants={textvariants}
+              className="tracking-widest max-md:text-gray-200xl"
+            >
               Crafting
             </motion.div>
             <motion.h1
@@ -64,7 +67,7 @@ const Hero = () => {
               //   scale: { duration: 2 },
               // }}
               variants={textvariants}
-              className="text-6xl font-bold uppercase"
+              className="text-4xl font-bold uppercase lg:text-6xl"
             >
               Modern Web Applications
             </motion.h1>
@@ -94,25 +97,25 @@ const Hero = () => {
       <motion.div className="top-0 w-full ">
         <motion.img
           src={a}
-          className="absolute rotate-45 right-16 top-32"
+          className="absolute z-10 rotate-45 right-16 bottom-3 md:top-32"
           alt=""
           width={100}
         />
         <motion.img
           src={a}
-          className="absolute rotate-12 left-60 -z-10 top-52"
+          className="absolute hidden xl:block rotate-12 lg:left-60 -right-12 top-24 md:top-52"
           alt=""
           width={100}
         />
         <img
           src={a}
-          className="absolute -rotate-12 right-48 top-1/2"
+          className="absolute z-20 rotate-12 lg:-rotate-12 right-48 md:top-1/2"
           alt=""
           width={50}
         />
         <img
           src={r}
-          className="absolute right-2/3 top-2/3"
+          className="absolute right-2/3 md:top-2/3"
           alt=""
           width={100}
         />

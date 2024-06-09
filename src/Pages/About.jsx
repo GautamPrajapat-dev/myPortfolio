@@ -9,7 +9,7 @@ const About = () => {
         <div className="w-3/4 mx-auto mt-12">
           <div className="mb-2 text-3xl font-bold ">Who Am I ?</div>
           <div className="grid grid-cols-4 gap-5">
-            <div className="col-span-2 px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
+            <div className="col-span-4 px-5 mx-auto lg:col-span-2 py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">Early Beginnings</div>
                 <div className="text-center capitalize text-1xl">
@@ -25,7 +25,7 @@ const About = () => {
               </div>
             </div>
             {/* Skills */}
-            <div className="col-span-2">
+            <div className="col-span-4 lg:col-span-2">
               <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
                 <div className="flex flex-col items-center justify-center gap-3">
                   <div className="text-2xl font-bold">Academic Foundation</div>

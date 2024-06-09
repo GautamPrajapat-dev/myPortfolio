@@ -14,9 +14,9 @@ const App = () => {
           scale: [1, 2, 2, 1, 1],
           rotate: [0, 0, 270, 270, 0],
         }}
-        className="fixed w-1/3 bg-purple-700 rounded-full left-72 top-26 h-2/3 blur-3xl -z-30"
+        className="fixed bg-purple-700 rounded-full w-96 lg:w-1/3 left-3 lg:left-72 top-26 h-96 lg:h-2/3 blur-3xl -z-30"
       ></motion.div>
-      <div className="fixed transition-transform translate-x-3 rounded-full bg-amber-700 h-96 w-96 top-1/3 left-3/4 blur-2xl -z-30"></div>
+      <div className="fixed transition-transform translate-x-3 rounded-full max-md:right-0 bg-cyan-600 h-96 w-96 bottom-2 lg:top-1/3 lg:left-3/4 blur-2xl -z-30"></div>
 
       <Navbar />
       <Routes>
