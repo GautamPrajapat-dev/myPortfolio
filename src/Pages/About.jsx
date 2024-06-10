@@ -1,4 +1,18 @@
+import { motion } from "framer-motion";
 const About = () => {
+  const variants = {
+    initial: {
+      opacity: 0,
+      transition: { duration: 0.3, delay: 0.1 },
+    },
+    whileInView: {
+      opacity: 1,
+      transition: { duration: 0.3, delay: 0.3 },
+    },
+    viewport: {
+      once: false,
+    },
+  };
   return (
     <>
       <div className="text-4xl mt-[3%]  flex justify-center items-center w-full    uppercase">
@@ -7,11 +21,20 @@ const About = () => {
           <span className="absolute border-b-4 border-green-400 bottom-0 -rotate-[2deg] w-36 "></span>
         </div>
       </div>
-      <div className="container mx-auto">
-        <div className="w-[96%] md:w-4/5  mx-auto mt-12">
+      <div className="container mx-auto overflow-hidden">
+        <motion.div
+          variants={variants}
+          className="w-[96%] md:w-4/5  mx-auto mt-12"
+        >
           <div className="mb-2 text-3xl font-bold ">Who Am I ?</div>
-          <div className="grid grid-cols-4 gap-5">
-            <div className="col-span-4 px-5 mx-auto lg:col-span-2 py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
+          <motion.div className="grid grid-cols-4 gap-5">
+            <motion.div
+              variants={variants}
+              initial="initial"
+              whileInView="whileInView"
+              viewport="viewport"
+              className="col-span-4 px-5 mx-auto lg:col-span-2 py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl"
+            >
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">Early Beginnings</div>
                 <div className="text-center capitalize text-1xl">
@@ -25,9 +48,16 @@ const About = () => {
                   and passion for technology.
                 </div>
               </div>
-            </div>
+            </motion.div>
             {/* Skills */}
-            <div className="col-span-4 lg:col-span-2">
+            <motion.div
+              variants={variants}
+              initial="initial"
+              whileInView="whileInView"
+              viewport="viewport"
+              transition={{ duration: 0.3, delay: 0.1 }}
+              className="col-span-4 lg:col-span-2"
+            >
               <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
                 <div className="flex flex-col items-center justify-center gap-3">
                   <div className="text-2xl font-bold">Academic Foundation</div>
@@ -45,9 +75,15 @@ const About = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="mt-5">
+            </motion.div>
+          </motion.div>
+          <motion.div
+            variants={variants}
+            initial="initial"
+            whileInView="whileInView"
+            viewport="viewport"
+            className="mt-5"
+          >
             <div className="mb-2 text-3xl font-bold">The Turning Point</div>
             <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
@@ -67,8 +103,14 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="mt-5">
+          </motion.div>
+          <motion.div
+            variants={variants}
+            initial="initial"
+            whileInView="whileInView"
+            viewport="viewport"
+            className="mt-5"
+          >
             <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">
@@ -76,40 +118,53 @@ const About = () => {
                 </div>
                 <div className="text-center capitalize text-1xl">
                   To formalize my skills and gain a competitive edge, I pursued
-                  a certification in Full Stack MERN Development from 3RIT
-                  Technology. This comprehensive program covered MongoDB,
-                  Express.js, React, and Node.js, collectively known as the MERN
-                  stack. This certification was a game-changer, providing me
-                  with the technical expertise needed to build robust and
-                  scalable web applications. It also opened up new opportunities
-                  for me to work on diverse projects and collaborate with other
-                  tech enthusiasts.
+                  a certification in Full Stack MERN Development from 3RI
+                  Technology ,Pune Maharashtra. This comprehensive program
+                  covered MongoDB, Express.js, React, and Node.js, collectively
+                  known as the MERN stack. This certification was a
+                  game-changer, providing me with the technical expertise needed
+                  to build robust and scalable web applications. It also opened
+                  up new opportunities for me to work on diverse projects and
+                  collaborate with other tech enthusiasts.
                 </div>
               </div>
             </div>
-          </div>
-          <div className="mt-5">
+          </motion.div>
+          <motion.div
+            variants={variants}
+            initial="initial"
+            whileInView="whileInView"
+            viewport="viewport"
+            className="mt-5"
+          >
             <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">
-                  Launching 'MongoMastery' with Youtube Channel
+                  Launching &apos;MongoMastery&apos; with Youtube Channel
                 </div>
                 <div className="text-center capitalize text-1xl">
                   In June 2020, I decided to share my knowledge and passion for
                   web development with a broader audience. This led to the
-                  creation of my YouTube channel, 'MongoMastery.' The channel's
-                  mission is to educate and inspire aspiring developers by
-                  providing comprehensive tutorials and insights into full stack
-                  development. Over time, 'MongoMastery' has grown into a
-                  vibrant community with over 3,600 subscribers and more than
-                  1.5 million views. The positive feedback and engagement from
-                  my audience have been incredibly rewarding and motivating.
+                  creation of my YouTube channel, &apos;MongoMastery&apos;. The
+                  channel&apos;s mission is to educate and inspire aspiring
+                  developers by providing comprehensive tutorials and insights
+                  into full stack development. Over time,
+                  &apos;MongoMastery&apos; has grown into a vibrant community
+                  with over 3,600 subscribers and more than 1.5 million views.
+                  The positive feedback and engagement from my audience have
+                  been incredibly rewarding and motivating.
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* Skills and Expertise */}
-          <div className="mt-5">
+          <motion.div
+            variants={variants}
+            initial="initial"
+            whileInView="whileInView"
+            viewport="viewport"
+            className="mt-5"
+          >
             <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">Skills and Expertise</div>
@@ -128,7 +183,7 @@ const About = () => {
                         <li className="list-item">
                           <span className="font-semibold">React:</span> My
                           proficiency in React allows me to build dynamic and
-                          responsive user interfaces. I leverage React's
+                          responsive user interfaces. I leverage React&apos;s
                           component-based architecture to create modular and
                           maintainable code. By utilizing hooks, the context
                           API, and state management libraries like Redux, I can
@@ -155,7 +210,7 @@ const About = () => {
                             Tailwind CSS & Daisy UI:
                           </span>
                           My proficiency in React allows me to build dynamic and
-                          responsive user interfaces. I leverage React's
+                          responsive user interfaces. I leverage React&apos;s
                           component-based architecture to create modular and
                           maintainable code. By utilizing hooks, the context
                           API, and state management libraries like Redux, I can
@@ -222,10 +277,16 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* #################### Advanced JavaScript and Full Stack Development ############### */}
-          <div className="mt-5">
+          <motion.div
+            variants={variants}
+            initial="initial"
+            whileInView="whileInView"
+            viewport="viewport"
+            className="mt-5"
+          >
             <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">
@@ -280,20 +341,26 @@ const About = () => {
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="mt-5">
+          </motion.div>
+          <motion.div
+            variants={variants}
+            initial="initial"
+            whileInView="whileInView"
+            viewport="viewport"
+            className="mt-5"
+          >
             <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">
-                  The Impact of 'MongoMastery'
+                  The Impact of &apos;MongoMastery&apos;
                 </div>
                 <div className="text-center capitalize text-1xl">
-                  'MongoMastery' has become more than just a YouTube channel; it
-                  is a community of learners and enthusiasts who share a passion
-                  for web development. Through my videos, I aim to break down
-                  complex concepts into digestible and practical tutorials that
-                  can help aspiring developers at all levels. The channel covers
-                  a wide range of topics, including:
+                  &apos;MongoMastery&apos; has become more than just a YouTube
+                  channel; it is a community of learners and enthusiasts who
+                  share a passion for web development. Through my videos, I aim
+                  to break down complex concepts into digestible and practical
+                  tutorials that can help aspiring developers at all levels. The
+                  channel covers a wide range of topics, including:
                 </div>
               </div>
               <div className="pl-12 mt-5">
@@ -330,11 +397,168 @@ const About = () => {
                 The positive feedback and engagement from my audience have been
                 incredibly rewarding. Seeing the impact of my content on their
                 learning journey motivates me to continue creating high-quality
-                tutorials and expanding the channel's offerings.
+                tutorials and expanding the channel&apos;s offerings.
               </h4>
             </div>
-          </div>
-        </div>
+          </motion.div>
+          <motion.div
+            variants={variants}
+            initial="initial"
+            whileInView="whileInView"
+            viewport="viewport"
+            className="mt-5"
+          >
+            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
+              <div className="flex flex-col items-center justify-center gap-3">
+                <div className="text-2xl font-semibold">Future Aspirations</div>
+                <div>
+                  As I continue my journey, I have several goals and
+                  aspirations:
+                </div>
+                <ul className="list-decimal">
+                  <div className="flex flex-col gap-5 pl-12">
+                    <li className="list-item">
+                      <span className="font-bold">
+                        Expand My Technical Expertise:
+                      </span>
+                      I aim to delve deeper into emerging technologies such as
+                      artificial intelligence (AI), machine learning (ML), and
+                      blockchain. By staying updated with the latest trends, I
+                      can continue to innovate and create cutting-edge
+                      solutions.
+                    </li>
+                    <li className="list-item">
+                      <span className="font-bold">
+                        Lead Innovative Projects:
+                      </span>
+                      My long-term goal is to lead projects that make a
+                      significant impact. Whether it&apos;s developing a
+                      groundbreaking application or contributing to an
+                      open-source initiative, I want to use my skills to drive
+                      positive change in the tech industry.
+                    </li>
+                    <li className="list-item">
+                      <span className="font-bold">Mentor and Educate:</span>I I
+                      am passionate about sharing my knowledge and helping
+                      others grow. I plan to continue expanding &apos;Full Stack
+                      Hero &apos; and explore other avenues for mentoring and
+                      educating aspiring developers, such as workshops,
+                      webinars, and online courses.
+                    </li>
+                    <li className="list-item">
+                      <span className="font-bold">
+                        Build a Strong Professional Network:
+                      </span>
+                      Networking is essential for growth and collaboration. I
+                      aim to connect with like-minded professionals and
+                      enthusiasts, fostering relationships that can lead to new
+                      opportunities and insights.
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            variants={variants}
+            initial="initial"
+            whileInView="whileInView"
+            viewport="viewport"
+            className="mt-5"
+          >
+            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-md ring-1 ring-white rounded-xl">
+              <div className="flex flex-col items-center justify-center gap-3">
+                <div className="text-2xl font-bold">Personal Philosophy</div>
+                <div className="text-center capitalize text-1xl">
+                  <span>
+                    I believe in the power of continuous learning and the
+                    importance of giving back to the community. Throughout my
+                    journey, I have learned that the tech industry is
+                    ever-evolving, and staying updated is crucial. By
+                    continuously expanding my knowledge and skills, I can remain
+                    at the forefront of innovation and contribute effectively to
+                    the field.
+                  </span>
+                  <span className="mt-5">
+                    Moreover, I am committed to helping others on their learning
+                    journey. Whether it&apos;s through my YouTube channel,
+                    mentoring, or collaborating on projects, I strive to create
+                    a positive impact and empower others to achieve their goals.
+                    I am motivated by the desire to create innovative solutions
+                    that make a difference and to inspire others to pursue their
+                    passions.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            variants={variants}
+            initial="initial"
+            whileInView="whileInView"
+            viewport="viewport"
+            className="mt-5"
+          >
+            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-md ring-1 ring-white rounded-xl">
+              <div className="flex flex-col items-center justify-center gap-3">
+                <div className="text-2xl font-bold">Let&apos;s Connect</div>
+                <div className="text-center capitalize text-1xl">
+                  <span>
+                    I am always open to connecting with like-minded
+                    professionals and enthusiasts. Whether you want to
+                    collaborate on a project, seek mentorship, or simply discuss
+                    web development, I am here to connect and engage. Feel free
+                    to reach out to me on{" "}
+                    <a
+                      className="text-blue-400"
+                      href="www.linkedin.com/in/gautam-prajapat-mern-developer"
+                    >
+                      LinkedIn&nbsp;
+                    </a>
+                    or send me an email at
+                    <a
+                      className="text-blue-400"
+                      href="mailto:goutamprajapat554@gmail.com"
+                    >
+                      &nbsp;goutamprajapat554@gmail.com&nbsp;
+                    </a>
+                    .
+                  </span>
+                  <span className="mt-5">
+                    Don&apos;t forget to check out my projects and subscribe to
+                    &apos;MongoMastery&apos; on YouTube for the latest web
+                    development tutorials and insights!
+                  </span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            variants={variants}
+            initial="initial"
+            whileInView="whileInView"
+            viewport="viewport"
+            className="mt-5"
+          >
+            <div className="px-5 mx-auto bg-transparent py-7 card backdrop-blur-md ring-1 ring-white rounded-xl">
+              <div className="flex flex-col items-center justify-center gap-3">
+                <div className="text-2xl font-bold">Final Thoughts</div>
+                <div className="text-center capitalize text-1xl">
+                  <span>
+                    My journey as a full stack developer and educator has been
+                    incredibly fulfilling. From my early beginnings to launching
+                    &apos;MongoMastery&apos;, I have continuously sought to
+                    learn, innovate, and share my knowledge with others. As I
+                    look to the future, I am excited about the opportunities
+                    that lie ahead and the potential to make a lasting impact in
+                    the tech industry.
+                  </span>
+                  <span className="mt-5">Thank you for</span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
       </div>
     </>
   );

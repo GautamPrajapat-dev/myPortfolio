@@ -54,10 +54,7 @@ const Hero = () => {
             initial="initial"
             animate="animate"
           >
-            <motion.div
-              variants={textvariants}
-              className="tracking-widest max-md:text-gray-200xl"
-            >
+            <motion.div className="tracking-widest max-md:text-gray-200xl animate-pulse">
               Crafting
             </motion.div>
             <motion.h1
