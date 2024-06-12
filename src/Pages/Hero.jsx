@@ -1,7 +1,7 @@
 import { FaCode } from "react-icons/fa";
 import { motion } from "framer-motion";
-import a from "../assets/animate.png";
-import r from "../assets/animate-ring.png";
+import a from "../assets/animate.webp";
+import r from "../assets/animate-ring.webp";
 const Hero = () => {
   const textvariants = {
     initial: {

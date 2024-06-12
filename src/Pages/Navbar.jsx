@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import a from "../assets/animate.png";
-import r from "../assets/animate-ring.png";
+import a from "../assets/animate.webp";
+import r from "../assets/animate-ring.webp";
 import { motion } from "framer-motion";
 const Navbar = () => {
   const navList = [

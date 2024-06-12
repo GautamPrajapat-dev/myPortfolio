@@ -3,10 +3,9 @@ import "./App.css";
 import Hero from "./Pages/Hero";
 import Navbar from "./Pages/Navbar";
 import About from "./Pages/About";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import Projects from "./Pages/Projects";
 import ContactUs from "./Pages/ContactUs";
-import { useScroll } from "framer-motion";
 const App = () => {
   const { scrollYProgress } = useScroll();
 

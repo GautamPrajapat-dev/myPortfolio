@@ -1,4 +1,4 @@
-import contactIcon from "../assets/contact-png.png";
+import contactIcon from "../assets/contact-png.webp";
 const ContactUs = () => {
   return (
     <div>
