@@ -1,6 +1,8 @@
+import Footer from "./Footer";
+
 const Projects = () => {
   return (
-    <div>
+    <>
       <div className="text-4xl mt-[3%]  flex justify-center items-center w-full    uppercase">
         <div className="relative flex justify-center w-full mx-auto">
           <span className="left-0 ">Projects</span>
@@ -10,7 +12,8 @@ const Projects = () => {
       <div className="text-3xl text-center">
         This page Under the Development
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 

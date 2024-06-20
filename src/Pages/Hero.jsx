@@ -31,19 +31,19 @@ const Hero = () => {
       },
     },
   };
-  const sliderVariants = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: "-220%",
+  // const sliderVariants = {
+  //   initial: {
+  //     x: 0,
+  //   },
+  //   animate: {
+  //     x: "-220%",
 
-      transition: {
-        repeat: Infinity,
-        duration: 30,
-      },
-    },
-  };
+  //     transition: {
+  //       repeat: Infinity,
+  //       duration: 30,
+  //     },
+  //   },
+  // };
   return (
     <>
       <div className="flex items-center justify-center mt-32 ">
@@ -67,7 +67,7 @@ const Hero = () => {
             >
               Modern Web Applications
             </motion.h1>
-            <motion.h1> with Gautam Prajapat</motion.h1>
+            <motion.h2> with Gautam Prajapat</motion.h2>
           </motion.div>
           <motion.div
             variants={buttonvariants}
@@ -93,7 +93,7 @@ const Hero = () => {
       <motion.div className="top-0 w-full ">
         <motion.img
           src={a}
-          className="absolute z-10 rotate-45 right-16 bottom-3 md:top-32"
+          className="fixed z-10 rotate-45 right-16 bottom-3 md:top-32"
           alt=""
           width={100}
         />
@@ -116,17 +116,17 @@ const Hero = () => {
           width={100}
         />
         <FaCode className="fixed text-2xl animate-bounce left-56 top-32" />
-        <FaCode className="fixed text-2xl animate-ping right-2/2 top-34" />
+        {/* <FaCode className="fixed text-2xl animate-ping right-2/2 top-34" /> */}
         <FaCode className="fixed text-4xl animate-pulse right-1/3 top-52" />
       </motion.div>
-      <motion.h1
+      {/* <motion.h1
         variants={sliderVariants}
         initial="initial"
         animate="animate"
         className="text-[40vh] text-white/20 font-semibold text-nowrap fixed -bottom-20"
       >
         Full Stack Hero
-      </motion.h1>
+      </motion.h1> */}
     </>
   );
 };

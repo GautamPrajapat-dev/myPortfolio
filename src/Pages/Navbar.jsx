@@ -58,12 +58,12 @@ const Navbar = () => {
         <div className="overflow-hidden rounded-lg from-blue-400/30 to-slate-400/35 xl:mx-7">
           <div className="flex items-center justify-around px-3 py-5 ">
             <div className="text-2xl font-bold lg:text-2xl">MongoMastery</div>
-            <motion.div
+            <div
               className="flex items-center justify-center text-xl font-bold top-11 left-10 lg:hidden"
               onClick={() => setToggle(!toggle)}
             >
               {!toggle ? <FaBars /> : <FaTimes />}
-            </motion.div>
+            </div>
             <nav className="hidden lg:flex">
               <ul className="flex items-center gap-4">
                 {navList.map((link, i) => {
@@ -85,12 +85,12 @@ const Navbar = () => {
                 : "py-4 hidden lg:block   transition-transform   ease-linear"
             }
           >
-            <div className="absolute rotate-45 -top-16">
-              <img src={a} alt="" />
+            <div className="absolute rotate-45 lg:hidden -top-16">
+              <img src={a} alt="image" loading="lazy" />
             </div>
-            <motion.div className="absolute rotate-45 bottom-12 -left-12">
-              <motion.img src={r} alt="" />
-            </motion.div>
+            <div className="absolute rotate-45 lg:hidden bottom-12 -left-12">
+              <img src={r} alt="ring" loading="lazy" />
+            </div>
             <motion.nav
               variants={variantsNav}
               animate={toggle ? "open" : "closed"}

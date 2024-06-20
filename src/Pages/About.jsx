@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import Footer from "./Footer";
+import HeaderText from "../Components/HeaderText";
 const About = () => {
   const variants = {
     initial: {
@@ -15,13 +17,8 @@ const About = () => {
   };
   return (
     <>
-      <div className="text-4xl mt-[3%]  flex justify-center items-center w-full    uppercase">
-        <div className="relative flex justify-center w-full mx-auto">
-          <span className="left-0 ">About Me</span>
-          <span className="absolute border-b-4 border-green-400 bottom-0 -rotate-[2deg] w-36 "></span>
-        </div>
-      </div>
-      <div className="container mx-auto overflow-hidden">
+      <HeaderText text="About Me" />
+      <div className="container pb-12 mx-auto overflow-hidden">
         <motion.div
           variants={variants}
           className="w-[96%] md:w-4/5  mx-auto mt-12"
@@ -508,12 +505,13 @@ const About = () => {
                     professionals and enthusiasts. Whether you want to
                     collaborate on a project, seek mentorship, or simply discuss
                     web development, I am here to connect and engage. Feel free
-                    to reach out to me on{" "}
+                    to reach out to me on
                     <a
                       className="text-blue-400"
                       href="www.linkedin.com/in/gautam-prajapat-mern-developer"
+                      title="LinkedIn Profile"
                     >
-                      LinkedIn&nbsp;
+                      &nbsp;LinkedIn&nbsp;
                     </a>
                     or send me an email at
                     <a
@@ -560,6 +558,7 @@ const About = () => {
           </motion.div>
         </motion.div>
       </div>
+      <Footer />
     </>
   );
 };
