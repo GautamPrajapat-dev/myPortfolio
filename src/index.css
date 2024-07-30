@@ -21,5 +21,5 @@ body {
   background: purple;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgb(173, 255, 47);
+  background: #adff2f;
 }

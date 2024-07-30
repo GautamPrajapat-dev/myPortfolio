@@ -2,7 +2,10 @@ import { FaCode } from "react-icons/fa";
 import { motion } from "framer-motion";
 import a from "../assets/animate.webp";
 import r from "../assets/animate-ring.webp";
+import { useNavigate } from "react-router-dom";
+
 const Hero = () => {
+  const navigate = useNavigate();
   const textvariants = {
     initial: {
       y: -500,
@@ -31,19 +34,7 @@ const Hero = () => {
       },
     },
   };
-  // const sliderVariants = {
-  //   initial: {
-  //     x: 0,
-  //   },
-  //   animate: {
-  //     x: "-220%",
 
-  //     transition: {
-  //       repeat: Infinity,
-  //       duration: 30,
-  //     },
-  //   },
-  // };
   return (
     <>
       <div className="flex items-center justify-center mt-32 ">
@@ -76,6 +67,7 @@ const Hero = () => {
             className="flex gap-4"
           >
             <motion.button
+              onClick={() => navigate("/contact")}
               variants={buttonvariants}
               className="py-2 transition-colors duration-700 rounded-md px-7 outline hover:bg-purple-500/40 outline-1 outline-purple-400"
             >
@@ -83,6 +75,7 @@ const Hero = () => {
             </motion.button>
             <motion.button
               variants={buttonvariants}
+              onClick={() => navigate("/about")}
               className="py-2 transition-colors duration-700 rounded-md px-7 outline bg-purple-500/40 outline-1 outline-purple-400"
             >
               About Us
@@ -91,42 +84,34 @@ const Hero = () => {
         </div>
       </div>
       <motion.div className="top-0 w-full ">
-        <motion.img
+        {/* <motion.img
           src={a}
           className="fixed z-10 rotate-45 right-16 bottom-3 md:top-32"
           alt=""
           width={100}
-        />
-        <motion.img
+        /> */}
+        {/* <motion.img
           src={a}
           className="fixed hidden xl:block rotate-12 lg:left-60 -right-12 top-24 md:top-52"
           alt=""
           width={100}
-        />
-        <img
+        /> */}
+        {/* <img
           src={a}
           className="fixed z-20 rotate-12 right-48 md:top-1/2"
           alt=""
           width={50}
-        />
-        <img
+        /> */}
+        {/* <img
           src={r}
           className="fixed right-2/3 md:top-2/3"
           alt=""
           width={100}
-        />
+        /> */}
         <FaCode className="fixed text-2xl animate-bounce left-56 top-32" />
         {/* <FaCode className="fixed text-2xl animate-ping right-2/2 top-34" /> */}
         <FaCode className="fixed text-4xl animate-pulse right-1/3 top-52" />
       </motion.div>
-      {/* <motion.h1
-        variants={sliderVariants}
-        initial="initial"
-        animate="animate"
-        className="text-[40vh] text-white/20 font-semibold text-nowrap fixed -bottom-20"
-      >
-        Full Stack Hero
-      </motion.h1> */}
     </>
   );
 };

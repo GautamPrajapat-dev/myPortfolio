@@ -1,18 +1,31 @@
 import { motion } from "framer-motion";
 import Footer from "./Footer";
 import HeaderText from "../Components/HeaderText";
+
 const About = () => {
   const variants = {
     initial: {
       opacity: 0,
+      scale: 0,
       transition: { duration: 0.3, delay: 0.1 },
     },
     whileInView: {
       opacity: 1,
-      transition: { duration: 0.3, delay: 0.3 },
+      scale: 1,
+      transition: { duration: 0.2, delay: 0.2 },
     },
     viewport: {
       once: false,
+    },
+    transition: {
+      duration: 0.2,
+      ease: [0, 0.71, 0.2, 1.01],
+      scale: {
+        type: "tween",
+        damping: 5,
+        stiffness: 100,
+        restDelta: 0.001,
+      },
     },
   };
   return (
@@ -21,7 +34,7 @@ const About = () => {
       <div className="container pb-12 mx-auto overflow-hidden">
         <motion.div
           variants={variants}
-          className="w-[96%] md:w-4/5  mx-auto mt-12"
+          className="w-[96%] flex flex-col md:w-4/5  mx-auto mt-12"
         >
           <div className="mb-2 text-3xl font-bold ">Who Am I ?</div>
           <motion.div className="grid grid-cols-4 gap-5">
@@ -30,7 +43,8 @@ const About = () => {
               initial="initial"
               whileInView="whileInView"
               viewport="viewport"
-              className="col-span-4 px-5 mx-auto lg:col-span-2 py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl"
+              transition={"transition"}
+              className="col-span-4 px-5 mx-auto lg:col-span-2 py-7 bg-black/10 card hover:ring-purple-400 backdrop-blur-xl ring-1 ring-white rounded-xl"
             >
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">Early Beginnings</div>
@@ -55,7 +69,7 @@ const About = () => {
               transition={{ duration: 0.3, delay: 0.1 }}
               className="col-span-4 lg:col-span-2"
             >
-              <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
+              <div className="px-5 mx-auto py-7 bg-black/10 card hover:ring-purple-400 backdrop-blur-xl ring-1 ring-white rounded-xl">
                 <div className="flex flex-col items-center justify-center gap-3">
                   <div className="text-2xl font-bold">Academic Foundation</div>
                   <div className="text-center capitalize text-1xl">
@@ -82,7 +96,7 @@ const About = () => {
             className="mt-5"
           >
             <div className="mb-2 text-3xl font-bold">The Turning Point</div>
-            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
+            <div className="px-5 mx-auto py-7 bg-black/10 card hover:ring-purple-400 backdrop-blur-xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">
                   Discovering Web Development
@@ -108,7 +122,7 @@ const About = () => {
             viewport="viewport"
             className="mt-5"
           >
-            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
+            <div className="px-5 mx-auto py-7 bg-black/10 card hover:ring-purple-400 backdrop-blur-xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">
                   Certification and Specialization
@@ -134,7 +148,7 @@ const About = () => {
             viewport="viewport"
             className="mt-5"
           >
-            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
+            <div className="px-5 mx-auto py-7 bg-black/10 card hover:ring-purple-400 backdrop-blur-xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">
                   Launching &apos;MongoMastery&apos; with Youtube Channel
@@ -162,7 +176,7 @@ const About = () => {
             viewport="viewport"
             className="mt-5"
           >
-            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
+            <div className="px-5 mx-auto py-7 bg-black/10 card hover:ring-purple-400 backdrop-blur-xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">Skills and Expertise</div>
                 <div className="capitalize text-1xl">
@@ -284,7 +298,7 @@ const About = () => {
             viewport="viewport"
             className="mt-5"
           >
-            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
+            <div className="px-5 mx-auto py-7 bg-black/10 card hover:ring-purple-400 backdrop-blur-xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">
                   Advanced JavaScript and Full Stack Development
@@ -346,7 +360,7 @@ const About = () => {
             viewport="viewport"
             className="mt-5"
           >
-            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
+            <div className="px-5 mx-auto py-7 bg-black/10 card hover:ring-purple-400 backdrop-blur-xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">
                   The Impact of &apos;MongoMastery&apos;
@@ -405,7 +419,7 @@ const About = () => {
             viewport="viewport"
             className="mt-5"
           >
-            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-3xl ring-1 ring-white rounded-xl">
+            <div className="px-5 mx-auto py-7 bg-black/10 card hover:ring-purple-400 backdrop-blur-xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-semibold">Future Aspirations</div>
                 <div>
@@ -463,7 +477,7 @@ const About = () => {
             viewport="viewport"
             className="mt-5"
           >
-            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-md ring-1 ring-white rounded-xl">
+            <div className="px-5 mx-auto py-7 bg-black/10 card hover:ring-purple-400 backdrop-blur-md ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">Personal Philosophy</div>
                 <div className="text-center capitalize text-1xl">
@@ -496,7 +510,7 @@ const About = () => {
             viewport="viewport"
             className="mt-5"
           >
-            <div className="px-5 mx-auto py-7 bg-black/10 card backdrop-blur-md ring-1 ring-white rounded-xl">
+            <div className="px-5 mx-auto py-7 bg-black/10 card hover:ring-purple-400 backdrop-blur-md ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">Let&apos;s Connect</div>
                 <div className="text-center capitalize text-1xl">
@@ -538,7 +552,7 @@ const About = () => {
             viewport="viewport"
             className="mt-5"
           >
-            <div className="px-5 mx-auto bg-transparent py-7 card backdrop-blur-md ring-1 ring-white rounded-xl">
+            <div className="px-5 mx-auto bg-transparent py-7 card hover:ring-purple-400 backdrop-blur-md ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">Final Thoughts</div>
                 <div className="text-center capitalize text-1xl">

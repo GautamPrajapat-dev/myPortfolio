@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="flex items-center justify-around px-3 py-5 ">
             <div className="text-2xl font-bold lg:text-2xl">MongoMastery</div>
             <div
-              className="flex items-center justify-center text-xl font-bold top-11 left-10 lg:hidden"
+              className="flex items-center justify-center text-xl font-bold cursor-pointer top-11 left-10 lg:hidden"
               onClick={() => setToggle(!toggle)}
             >
               {!toggle ? <FaBars /> : <FaTimes />}
