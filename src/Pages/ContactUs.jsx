@@ -67,7 +67,7 @@ const links = [
     name: "Email",
     icon: <IoMail />,
     hcolor: `orange`,
-    href: "mailto:goutamprajat554@gmail.com",
+    href: "mailto:goutamprajapat554@gmail.com",
   },
   {
     name: "Youtube",
@@ -80,7 +80,7 @@ const links = [
     name: "Linkdin",
     icon: <FaLinkedin />,
     hcolor: "blue",
-    href: "http://www.linkedin.com/in/goutam-prajapat-mern-developer",
+    href: "https://www.linkedin.com/in/gautam-prajapat-mern-developer",
   },
 
   {
