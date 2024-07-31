@@ -43,15 +43,6 @@ const App = () => {
   return (
     <>
       <LazyMotion features={domAnimation}>
-        {/* <motion.div
-        animate={{
-          scale: [0, 2.5],
-          transition: {
-            duration: 2,
-          },
-        }}
-        className="fixed bg-purple-700 rounded-full w-96 left-3 lg:left-72 lg:blur-3xl top-26 h-96 -z-30"
-      ></motion.div> */}
         <div
           ref={myRef}
           className="fixed top-0 w-full h-screen -z-50"
@@ -62,15 +53,6 @@ const App = () => {
           style={{ x, y }}
           className="fixed rounded-full -left-12 bg-green-yellow-600 -z-50 w-14 h-14"
         ></motion.div>
-
-        {/* <motion.div
-        style={{
-          scale: scrollYProgress,
-          scaleX: 1.4,
-          scaleY: 1.4,
-        }}
-        className="fixed hidden transition-transform translate-x-3 rounded-full lg:block max-md:right-0 bg-cyan-600 h-96 w-96 bottom-2 lg:-bottom-6 lg:-right-32 blur-3xl -z-30"
-      ></motion.div> */}
 
         <Suspense
           fallback={

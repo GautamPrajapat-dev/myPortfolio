@@ -1,7 +1,7 @@
 import { FaCode } from "react-icons/fa";
 import { motion } from "framer-motion";
-import a from "../assets/animate.webp";
-import r from "../assets/animate-ring.webp";
+// import a from "../assets/animate.webp";
+// import r from "../assets/animate-ring.webp";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
@@ -49,10 +49,6 @@ const Hero = () => {
               Crafting
             </motion.div>
             <motion.h1
-              // transition={{
-              //   rotate: { duration: 1 },
-              //   scale: { duration: 2 },
-              // }}
               variants={textvariants}
               className="text-4xl font-bold uppercase lg:text-6xl"
             >

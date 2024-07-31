@@ -60,9 +60,6 @@ const Projects = () => {
           );
         })}
       </div>
-      {/* <div className="text-3xl text-center">
-        This page Under the Development
-      </div> */}
       <Footer />
     </>
   );

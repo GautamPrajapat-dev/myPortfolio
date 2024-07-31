@@ -2,7 +2,6 @@ import { FaLinkedin, FaPhone, FaYoutube } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import contactIcon from "../assets/contact-png.webp";
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
 import HeaderText from "../Components/HeaderText";
 import { motion } from "framer-motion";
 const ContactUs = () => {
