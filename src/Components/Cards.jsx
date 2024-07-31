@@ -11,25 +11,25 @@ const Cards = ({
 }) => {
   return (
     <>
-      <div className="container mx-auto">
-        <div className="mx-auto ">
+      <div className="w-96">
+        <div className="mx-auto">
           <div
-            className={`flex flex-col gap-3 p-4 bg-white rounded-md ${classMain}`}
+            className={`flex flex-col bg-white/10  text-white backdrop-blur-md overflow-hidden rounded-md ${classMain}`}
           >
-            <div className="overflow-hidden border border-gray-400 rounded-md img">
-              <img className="" src={imgs} alt={imgs} />
+            <div className="overflow-hidden h-[12rem] rounded-md  bg-cover img">
+              <img className="bg-center" src={imgs} alt={imgs} />
             </div>
-            <div className="flex flex-col gap-3 ">
+            <div className="flex flex-col gap-3 p-4 ">
               <div>
-                <h1 className="text-2xl font-bold text-black ">{heading}</h1>
-                <h6 className="text-sm font-light text-slate-700">
+                <h1 className="text-2xl font-bold ">{heading}</h1>
+                <h6 className="text-sm font-light text-slate-300">
                   {subHeading}
                 </h6>
               </div>
               <div>{children}</div>
               <a
                 href={links}
-                className="py-2 text-center bg-blue-900 cursor-pointer btn btn-outline"
+                className="py-2 text-center bg-purple-600 rounded-md cursor-pointer btn btn-outline"
                 target="_blank"
                 title={links}
               >

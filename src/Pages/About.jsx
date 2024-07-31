@@ -34,7 +34,7 @@ const About = () => {
       <div className="container pb-12 mx-auto overflow-hidden">
         <motion.div
           variants={variants}
-          className="w-[96%] flex flex-col md:w-4/5  mx-auto mt-12"
+          className="w-[96%] PX-2 flex flex-col md:w-4/5  mx-auto mt-12"
         >
           <div className="mb-2 text-3xl font-bold ">Who Am I ?</div>
           <motion.div className="grid grid-cols-4 gap-5">

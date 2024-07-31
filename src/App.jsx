@@ -23,7 +23,6 @@ const App = () => {
       setVantaEffect(
         WAVES({
           el: myRef.current,
-
           mouseControls: true,
           touchControls: true,
           gyroControls: true,
@@ -61,8 +60,9 @@ const App = () => {
         <motion.div
           ref={cur}
           style={{ x, y }}
-          className="fixed rounded-full bg-green-yellow-600 -z-50 w-14 h-14"
+          className="fixed rounded-full -left-12 bg-green-yellow-600 -z-50 w-14 h-14"
         ></motion.div>
+
         {/* <motion.div
         style={{
           scale: scrollYProgress,

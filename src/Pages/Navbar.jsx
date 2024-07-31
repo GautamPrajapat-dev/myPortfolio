@@ -8,7 +8,7 @@ const Navbar = () => {
   const navList = [
     { link: "Home", path: "/" },
     { link: "About", path: "/about" },
-    { link: "projects", path: "/projects" },
+    { link: "Projects", path: "/projects" },
     { link: "Contact Us", path: "/contact" },
   ];
   const [toggle, setToggle] = useState(false);
@@ -57,7 +57,8 @@ const Navbar = () => {
       <div className="container pt-4 mx-auto">
         <div className="overflow-hidden rounded-lg from-blue-400/30 to-slate-400/35 xl:mx-7">
           <div className="flex items-center justify-around px-3 py-5 ">
-            <div className="text-2xl font-bold lg:text-2xl">MongoMastery</div>
+            <img src="/images/l.png" alt="logo" width={180} className=""></img>
+            {/* <div className="text-2xl font-bold lg:text-2xl">MongoMastery</div> */}
             <div
               className="flex items-center justify-center text-xl font-bold cursor-pointer top-11 left-10 lg:hidden"
               onClick={() => setToggle(!toggle)}
