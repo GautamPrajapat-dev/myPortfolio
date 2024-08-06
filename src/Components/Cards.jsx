@@ -17,7 +17,7 @@ const Cards = ({
             className={`flex flex-col bg-white/10  text-white backdrop-blur-md overflow-hidden rounded-md ${classMain}`}
           >
             <div className="overflow-hidden h-[12rem] rounded-md  bg-cover img">
-              <img className="bg-center" src={imgs} alt={imgs} />
+              <img className="bg-center" loading="lazy" src={imgs} alt={imgs} />
             </div>
             <div className="flex flex-col gap-3 p-4 ">
               <div>

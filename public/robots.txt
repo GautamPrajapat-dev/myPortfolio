@@ -19,5 +19,4 @@ Disallow:
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Disallow: /about
 Sitemap: https://mongomastery.netlify.app/

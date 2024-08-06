@@ -565,7 +565,7 @@ const About = () => {
                     that lie ahead and the potential to make a lasting impact in
                     the tech industry.
                   </span>
-                  <span className="mt-5">Thank you for</span>
+                  {/* <span className="mt-5">Thank you for</span> */}
                 </div>
               </div>
             </div>
