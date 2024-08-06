@@ -16,8 +16,8 @@ User-agent: yahoo-mmcrawler
 Disallow: 
 User-agent: yahoo-blogs/v3.9
 Disallow: 
+Disallow: /cgi-bin/
 User-agent: *
 Allow: / 
-Disallow: /cgi-bin/
 Sitemap: https://mongomastery.netlify.app/
 Allow: /
