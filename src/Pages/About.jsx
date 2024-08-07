@@ -30,7 +30,18 @@ const About = () => {
   };
   return (
     <>
-      <HeaderText text="About Me" />
+      <div className="relative ">
+        <div className="z-30 w-full mx-auto xl:absolute top-32">
+          <HeaderText text="About Me" />
+        </div>
+        <div className="hidden w-full overflow-hidden h-96 xl:block">
+          <img
+            src="/images/about-image.webp"
+            className="w-full filter brightness-50 -mt-96"
+            alt="about me"
+          />
+        </div>
+      </div>
       <div className="container pb-12 mx-auto overflow-hidden">
         <motion.div
           variants={variants}
@@ -49,14 +60,14 @@ const About = () => {
               <div className="flex flex-col items-center justify-center gap-3">
                 <div className="text-2xl font-bold">Early Beginnings</div>
                 <div className="text-center capitalize text-1xl">
-                  My name is Gautam Prajapat, and my journey into the world of
-                  technology and business has been a thrilling adventure filled
-                  with learning, challenges, and growth. Growing up in Indore,
-                  India, I was always fascinated by how things work. This
-                  curiosity led me to explore various fields, from tinkering
-                  with electronics to diving deep into the world of computers.
-                  Little did I know that this fascination would shape my career
-                  and passion for technology.
+                  My name is <h1 className="inline">Gautam Prajapat</h1>, and my
+                  journey into the world of technology and business has been a
+                  thrilling adventure filled with learning, challenges, and
+                  growth. Growing up in Indore, India, I was always fascinated
+                  by how things work. This curiosity led me to explore various
+                  fields, from tinkering with electronics to diving deep into
+                  the world of computers. Little did I know that this
+                  fascination would shape my career and passion for technology.
                 </div>
               </div>
             </motion.div>
@@ -98,9 +109,9 @@ const About = () => {
             <div className="mb-2 text-3xl font-bold">The Turning Point</div>
             <div className="px-5 mx-auto py-7 bg-black/10 card hover:ring-purple-400 backdrop-blur-xl ring-1 ring-white rounded-xl">
               <div className="flex flex-col items-center justify-center gap-3">
-                <div className="text-2xl font-bold">
+                <h1 className="text-2xl font-bold">
                   Discovering Web Development
-                </div>
+                </h1>
                 <div className="text-center capitalize text-1xl">
                   While my MBA program equipped me with essential business
                   skills, I soon realized that my true passion lay in

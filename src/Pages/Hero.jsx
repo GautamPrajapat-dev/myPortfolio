@@ -45,16 +45,16 @@ const Hero = () => {
             initial="initial"
             animate="animate"
           >
-            <motion.h1 className="tracking-widest max-md:text-gray-200xl animate-pulse">
+            <motion.h2 className="tracking-widest max-md:text-gray-200xl animate-pulse">
               Crafting
-            </motion.h1>
+            </motion.h2>
             <motion.h1
               variants={textvariants}
               className="text-4xl font-bold uppercase lg:text-6xl"
             >
               Modern Web Applications
             </motion.h1>
-            <motion.h2> with Gautam Prajapat</motion.h2>
+            <motion.h1> with Gautam Prajapat</motion.h1>
           </motion.div>
           <motion.div
             variants={buttonvariants}
